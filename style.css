@@ -18,63 +18,61 @@ h3 {
 
 /* Header */
 header {
+  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
 }
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: 80px;
-}
-
 nav {
   display: flex;
+  align-items: center;
+  margin-left: 30px;
 }
-
+.header-row {
+  display: flex;
+  flex-direction: row;
+}
 nav a {
-  margin-left: 15px;
+  padding-left: 20px;
+  color: #003049;
+  font-size: 1.2rem;
 }
 
 /* Containers */
-
-#about {
+div {
+  background-color: #eae2b7;
+  margin: auto;
+  width: 600px;
+}
+.profile-section {
+  display: flex;
+  flex-direction: row;
+}
+.profile-details {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+.profile-heading, .profile-text {
+  flex: 1;
+  margin: 5px;
   text-align: center;
-  align-items: center;
-  padding: 20px;
 }
-
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-circle {
+.profile-image {
   border: 2px solid #003049;
   border-radius: 50%;
-  margin-right: 20px;
 }
-
-.about-text {
-  text-align: left;
+.portfolio-layout {
+  display: flex;
 }
-
-.about-text h3 {
-  text-align: center;
+.portfolio-item {
+  flex: 1;
+  margin: 5px;
 }
-
-.background-text {
-  text-align: center;
-  justify-content: center;
+.portfolio-description {
+  font-size: 14px;
 }
 article {
   padding: 50px 0;
 }
-
 article div {
   text-align: center;
   width: 100%;
@@ -89,7 +87,6 @@ p {
 a:link {
   color: #d62828;
 }
-
 a:hover {
   color: #f77f00;
 }
@@ -100,8 +97,6 @@ img {
   max-width: 200px;
   height: auto;
 }
-
-
 
 /* Footer */
 footer {
